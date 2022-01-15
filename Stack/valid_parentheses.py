@@ -1,8 +1,11 @@
 # https://leetcode.com/problems/valid-parentheses/
 # O(N) TS
 
+from stack import Stack
+
+
 def is_valid_parentheses(string: str) -> bool:
-    stack = []
+    stack = Stack()
     matching_brackets = {
         ')': '(',
         '}': '{',
@@ -11,9 +14,11 @@ def is_valid_parentheses(string: str) -> bool:
 
     for character in string:
         if character in matching_brackets.values():
-            stack.append(character)
-        else:
-            if not stack or stack.pop() != matching_brackets[character]:
+            stack.push(character)
+        elif character in matching_brackets:
+            if stack.is_empty():
+                return False
+            if stack.pop() != matching_brackets[character]:
                 return False
 
-    return stack == []
+    return stack.is_empty()
