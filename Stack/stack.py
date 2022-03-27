@@ -11,12 +11,12 @@ class Stack:
     @property
     def top(self):
         if self.is_empty():
-            raise Exception('Stack is empty')
+            raise Exception("Stack is empty")
         return self.stack[-1]
 
     def pop(self):
         if self.is_empty():
-            raise Exception('Stack is empty')
+            raise Exception("Stack is empty")
         return self.stack.pop()
 
     def push(self, number):

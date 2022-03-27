@@ -1,7 +1,8 @@
 # https://leetcode.com/problems/two-sum/
 # O(N) TS
 
-def twoSum(nums: List[int], target: int) -> List[int]:
+
+def two_sum(nums: list[int], target: int) -> list[int]:
     table = {}
 
     for index, number in enumerate(nums):

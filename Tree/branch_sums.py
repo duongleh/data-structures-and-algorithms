@@ -1,10 +1,10 @@
 # https://www.algoexpert.io/questions/Branch%20Sums
-# O(N) T - O(N) S
+# O(N) T | O(N) S
 
 
 from typing import Optional
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
 def branch_sums(

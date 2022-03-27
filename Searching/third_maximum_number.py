@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/third-maximum-number
-# O(N) T - O(1) S
+# O(N) T | O(1) S
+
 
 def third_max_number(array: list[int]) -> int:
     max_number = second_max_number = third_max_number = None

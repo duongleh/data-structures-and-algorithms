@@ -7,9 +7,9 @@ from stack import Stack
 def is_valid_parentheses(string: str) -> bool:
     stack = Stack()
     matching_brackets = {
-        ')': '(',
-        '}': '{',
-        ']': '['
+        ")": "(",
+        "}": "{",
+        "]": "[",
     }
 
     for character in string:

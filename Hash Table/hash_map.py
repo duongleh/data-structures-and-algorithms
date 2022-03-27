@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/design-hashmap
 
+
 class HashMap:
     def __init__(self):
         self.size = 1998
@@ -31,7 +32,7 @@ class HashMap:
         if not self.data[hashed_key]:
             return
 
-        for index, (original_key, value) in enumerate(self.data[hashed_key]):
+        for index, (original_key, _) in enumerate(self.data[hashed_key]):
             if key == original_key:
                 self.data[hashed_key].pop(index)
                 return

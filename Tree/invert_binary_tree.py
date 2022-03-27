@@ -1,17 +1,17 @@
 # https://leetcode.com/problems/invert-binary-tree
-# O(N) T - O(N) S
+# O(N) T | O(N) S
 
 from typing import Optional
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
 class InvertBinaryTree:
     def recursive_traverse(self, root: Optional[TreeNode]) -> TreeNode:
         if root:
             root.left_child, root.right_child = root.right_child, root.left_child
-            self.invertTree(root.left_child)
-            self.invertTree(root.right_child)
+            self.recursive_traverse(root.left_child)
+            self.recursive_traverse(root.right_child)
 
         return root
 

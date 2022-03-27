@@ -1,6 +1,7 @@
 # https://www.algoexpert.io/questions/Quick%20Sort
-# Best: O(Nlog(N)) T - O(log(N)) S
-# Worst: O(N^2) T - O(log(N)) S
+# Best: O(Nlog(N)) T | O(log(N)) S
+# Worst: O(N^2) T | O(log(N)) S
+
 
 def quick_sort(array: list[int]) -> list[int]:
     sort(array, 0, len(array) - 1)

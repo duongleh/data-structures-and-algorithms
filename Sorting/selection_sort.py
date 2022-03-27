@@ -1,5 +1,6 @@
 # https://www.algoexpert.io/questions/Selection%20Sort
-# O(N^2) T - O(1) S
+# O(N^2) T | O(1) S
+
 
 def selection_sort(numbers: list[int]):
     for index in range(len(numbers)):

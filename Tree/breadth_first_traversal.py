@@ -1,9 +1,9 @@
 # https://leetcode.com/problems/binary-tree-level-order-traversal
-# O(N) T - O(H) S (H is the height of the Binary Tree)
+# O(N) T | O(H) S (H is the height of the Binary Tree)
 
 from typing import Optional
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
 class DepthFirstTraversal:

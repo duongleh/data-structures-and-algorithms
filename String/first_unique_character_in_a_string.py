@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/first-unique-character-in-a-string/
-# O(N) T - O(1) S
+# O(N) T | O(1) S
+
 
 def first_unique_character_in_a_string(string: str) -> int:
     character_frequencies = {}

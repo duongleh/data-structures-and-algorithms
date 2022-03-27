@@ -1,10 +1,10 @@
 # https://leetcode.com/problems/path-sum
-# O(N) T - O(N) S
+# O(N) T | O(N) S
 
 
 from typing import Optional
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
 def path_sum(root: Optional[TreeNode], target_sum: int) -> bool:

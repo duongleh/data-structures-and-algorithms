@@ -1,11 +1,14 @@
 from typing import Optional
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
 # https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
-# O(N) T - O(N) S
-def construct_from_preorder_and_inorder(preorder: list[int], inorder: list[int]) -> Optional[TreeNode]:
+# O(N) T | O(N) S
+def construct_from_preorder_and_inorder(
+    preorder: list[int],
+    inorder: list[int],
+) -> Optional[TreeNode]:
     if not inorder:
         return None
 
@@ -20,8 +23,11 @@ def construct_from_preorder_and_inorder(preorder: list[int], inorder: list[int])
 
 
 # https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal
-# O(N) T - O(N) S
-def construct_from_inorder_and_postorder(inorder: list[int], postorder: list[int]) -> Optional[TreeNode]:
+# O(N) T | O(N) S
+def construct_from_inorder_and_postorder(
+    inorder: list[int],
+    postorder: list[int],
+) -> Optional[TreeNode]:
     if not inorder:
         return None
 

@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/binary-search/
-# O(log(N)) T - O(1) S
+# O(log(N)) T | O(1) S
+
 
 def binary_search(array: list[int], target: int) -> int:
     start_index = 0

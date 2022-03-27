@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/merge-sorted-array/
 # O(M+N) TS
 
+
 def merge_sorted_arrays(arr_1, arr_2):
     len_1 = len(arr_1)
     len_2 = len(arr_2)

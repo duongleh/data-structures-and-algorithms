@@ -1,10 +1,15 @@
 # https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree
-# O(N) T - O(N) S
+# O(N) T | O(N) S
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
-def lowest_common_ancestor_of_binary_tree(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+def lowest_common_ancestor_of_binary_tree(
+    self,
+    root: TreeNode,
+    p: TreeNode,
+    q: TreeNode,
+) -> TreeNode:
     if not root:
         return None
 

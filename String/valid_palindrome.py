@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/valid-palindrome/
-# O(N) T - O(1) S
+# O(N) T | O(1) S
+
 
 def is_palindrome(string: str) -> bool:
     index_from_start = 0

@@ -1,7 +1,8 @@
 # https://leetcode.com/problems/contains-duplicate/
 # O(N) TS
 
-def containsDuplicate(nums: List[int]) -> bool:
+
+def contains_duplicate(nums: list[int]) -> bool:
     number_frequencies = {}
 
     for num in nums:

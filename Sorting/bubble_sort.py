@@ -1,5 +1,6 @@
 # https://www.algoexpert.io/questions/Bubble%20Sort
-# O(N^2) T - O(1) S
+# O(N^2) T | O(1) S
+
 
 def bubble_sort(numbers: list[int]):
     counter = 0

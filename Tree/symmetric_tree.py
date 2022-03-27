@@ -1,9 +1,9 @@
 # https://leetcode.com/problems/symmetric-tree
-# O(N) T - O(N) S
+# O(N) T | O(N) S
 
 from typing import Optional
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
 class SymmetricTree:
@@ -27,8 +27,14 @@ class SymmetricTree:
         if left_node.value != right_node.value:
             return False
 
-        is_left_subtree_symmetrical = self.recursive_traverse_helper(left_node.left_child, right_node.right_child)
-        is_right_subtree_symmetrical = self.recursive_traverse_helper(left_node.right_child, right_node.left_child)
+        is_left_subtree_symmetrical = self.recursive_traverse_helper(
+            left_node.left_child,
+            right_node.right_child,
+        )
+        is_right_subtree_symmetrical = self.recursive_traverse_helper(
+            left_node.right_child,
+            right_node.left_child,
+        )
 
         return is_left_subtree_symmetrical and is_right_subtree_symmetrical
 

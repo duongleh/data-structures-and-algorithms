@@ -22,7 +22,7 @@ class DoublyLinkedList(LinkedList):
 
     def insert_before(self, node: Node, node_to_insert: Node) -> None:
         if not self.is_node_in_list(node):
-            raise Exception('Invalid node')
+            raise Exception("Invalid node")
 
         if node == self.head:
             return self.add_at_head(node_to_insert)
@@ -35,7 +35,7 @@ class DoublyLinkedList(LinkedList):
 
     def insert_after(self, node: Node, node_to_insert: Node) -> None:
         if not self.is_node_in_list(node):
-            raise Exception('Invalid node')
+            raise Exception("Invalid node")
 
         if node == self.tail:
             return self.add_at_tail(node_to_insert)
@@ -78,7 +78,7 @@ class DoublyLinkedList(LinkedList):
             return self.delete_tail()
 
         if not self.is_node_in_list(node):
-            raise Exception('Invalid node')
+            raise Exception("Invalid node")
 
         node.prev.next = node.next
         node.next.prev = node.prev
@@ -97,5 +97,5 @@ class DoublyLinkedList(LinkedList):
         self.head, self.tail = self.tail, self.head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run_test(DoublyLinkedList)

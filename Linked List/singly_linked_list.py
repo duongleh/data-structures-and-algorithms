@@ -47,7 +47,7 @@ class SinglyLinkedList(LinkedList):
             return self.add_at_head(node_to_insert)
 
         if not self.is_node_in_list(node):
-            raise Exception('Invalid node')
+            raise Exception("Invalid node")
 
         previous_node = self._get_the_previous_node_of(node)
 
@@ -57,7 +57,7 @@ class SinglyLinkedList(LinkedList):
 
     def insert_after(self, node: Node, node_to_insert: Node) -> None:
         if not self.is_node_in_list(node):
-            raise Exception('Invalid node')
+            raise Exception("Invalid node")
 
         node_to_insert.next = node.next
         node.next = node_to_insert
@@ -83,7 +83,7 @@ class SinglyLinkedList(LinkedList):
             return self.delete_head()
 
         if not self.is_node_in_list(node):
-            raise Exception('Invalid node')
+            raise Exception("Invalid node")
 
         previous_node = self._get_the_previous_node_of(node)
         previous_node.next = node.next
@@ -108,5 +108,5 @@ class SinglyLinkedList(LinkedList):
                 next_node = next_node.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run_test(SinglyLinkedList)

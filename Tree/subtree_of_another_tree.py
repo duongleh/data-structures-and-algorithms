@@ -1,10 +1,10 @@
 # https://leetcode.com/problems/subtree-of-another-tree
-# O(N) T - O(N) S
+# O(N) T | O(N) S
 
 
 from typing import Optional
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
 def is_subtree(self, root: Optional[TreeNode], sub_root: Optional[TreeNode]) -> bool:

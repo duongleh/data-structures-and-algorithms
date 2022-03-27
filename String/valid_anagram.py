@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/valid-anagram/
 # O(N) TS
 
+
 def is_anagram(first_string: str, second_string: str) -> bool:
     if len(first_string) != len(second_string):
         return False

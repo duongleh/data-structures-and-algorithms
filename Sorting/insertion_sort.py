@@ -1,5 +1,6 @@
 # https://www.algoexpert.io/questions/Insertion%20Sort
-# O(N^2) T - O(1) S
+# O(N^2) T | O(1) S
+
 
 def insertion_sort(numbers: list[int]):
     for index in range(1, len(numbers)):

@@ -1,5 +1,6 @@
 # https://www.algoexpert.io/questions/Merge%20Sort
-# O(Nlog(N)) T - O(Nlog(N)) S
+# O(Nlog(N)) T | O(Nlog(N)) S
+
 
 from Array.merge_sorted_arrays import merge_sorted_arrays
 

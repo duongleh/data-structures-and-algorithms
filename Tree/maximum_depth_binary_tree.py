@@ -1,9 +1,9 @@
 # https://leetcode.com/problems/maximum-depth-of-binary-tree
-# O(N) T - O(N) S
+# O(N) T | O(N) S
 
 from typing import Optional
 
-from Tree.binary_tree import TreeNode
+from binary_tree import TreeNode
 
 
 class MaximumDepthBinaryTree:
@@ -16,8 +16,8 @@ class MaximumDepthBinaryTree:
         if root.left_child is root.right_child is None:
             return depth
 
-        left_depth = self.maxDepth(root.left_child, depth)
-        right_depth = self.maxDepth(root.right_child, depth)
+        left_depth = self.recursive_traverse(root.left_child, depth)
+        right_depth = self.recursive_traverse(root.right_child, depth)
         return max(left_depth, right_depth)
 
     def iterative_traverse(self, root: Optional[TreeNode]) -> int:
