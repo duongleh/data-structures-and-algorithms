@@ -1,5 +1,5 @@
-# https://leetcode.com/problems/min-stack/
-# https://leetcode.com/problems/max-stack/
+# https://leetcode.com/problems/min-stack
+# https://leetcode.com/problems/max-stack
 # O(1) TS
 
 from stack import Stack

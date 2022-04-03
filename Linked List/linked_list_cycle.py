@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/linked-list-cycle/
+# https://leetcode.com/problems/linked-list-cycle
 # O(N) TS
 
 from typing import Optional

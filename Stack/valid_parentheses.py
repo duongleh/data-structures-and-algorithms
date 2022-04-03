@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/valid-parentheses/
+# https://leetcode.com/problems/valid-parentheses
 # O(N) TS
 
 from stack import Stack

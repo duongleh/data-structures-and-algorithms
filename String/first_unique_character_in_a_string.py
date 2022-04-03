@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/first-unique-character-in-a-string/
+# https://leetcode.com/problems/first-unique-character-in-a-string
 # O(N) T | O(1) S
 
 

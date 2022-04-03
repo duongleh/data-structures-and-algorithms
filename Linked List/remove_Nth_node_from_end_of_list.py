@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+# https://leetcode.com/problems/remove-nth-node-from-end-of-list
 # O(N) T | O(1) S
 
 from typing import Optional

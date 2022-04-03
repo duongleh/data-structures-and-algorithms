@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/valid-palindrome/
+# https://leetcode.com/problems/valid-palindrome
 # O(N) T | O(1) S
 
 

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+# https://leetcode.com/problems/remove-duplicates-from-sorted-list
 # O(N) T | O(1) S
 
 from typing import Optional

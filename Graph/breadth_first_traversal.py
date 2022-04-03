@@ -1,4 +1,4 @@
-# https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1/
+# https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
 # O(V+E) T | O(V) S
 
 from graph import AdjacencyListGraph
