@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/find-if-path-exists-in-graph
-# O(V+E) T | O(V+E) S
+# O(V+E) TS
 
 from graph import AdjacencyListGraph
 
