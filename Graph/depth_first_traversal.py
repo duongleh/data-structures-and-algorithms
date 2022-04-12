@@ -18,13 +18,13 @@ def depth_first_traversal(
     visited_vertices.add(vertex)
     traversed_vertices.append(vertex)
 
-    for adjacency_vertex in graph.get_adjacent_vertices(vertex):
-        if adjacency_vertex in visited_vertices:
+    for adjacent_vertex in graph.get_adjacent_vertices(vertex):
+        if adjacent_vertex in visited_vertices:
             continue
 
         depth_first_traversal(
             graph,
-            adjacency_vertex,
+            adjacent_vertex,
             visited_vertices,
             traversed_vertices,
         )

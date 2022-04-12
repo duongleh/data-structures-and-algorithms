@@ -21,7 +21,7 @@ def dfs(
         paths.append(path)
         return
 
-    for adjacency_vertex in graph.get_adjacent_vertices(source):
-        dfs(graph, adjacency_vertex, target, [*path], paths)
+    for adjacent_vertex in graph.get_adjacent_vertices(source):
+        dfs(graph, adjacent_vertex, target, [*path], paths)
 
     return paths

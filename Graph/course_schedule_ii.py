@@ -31,7 +31,7 @@ def find_path(
         vertex = queue.pop(0)
         topological_order.append(vertex)
 
-        for adjacency_vertex in graph.get_adjacent_vertices(vertex):
-            indegree[adjacency_vertex] -= 1
-            if indegree[adjacency_vertex] == 0:
-                queue.append(adjacency_vertex)
+        for adjacent_vertex in graph.get_adjacent_vertices(vertex):
+            indegree[adjacent_vertex] -= 1
+            if indegree[adjacent_vertex] == 0:
+                queue.append(adjacent_vertex)
