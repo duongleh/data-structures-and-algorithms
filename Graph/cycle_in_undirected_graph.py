@@ -17,8 +17,8 @@ def detect_cycle_in_undirected_graph(
 
     visited.add(vertex)
 
-    for adjacency_vertex in graph.get_adjacent_vertices(vertex):
-        if detect_cycle_in_undirected_graph(graph, adjacency_vertex, vertex, visited):
+    for adjacent_vertex in graph.get_adjacent_vertices(vertex):
+        if detect_cycle_in_undirected_graph(graph, adjacent_vertex, vertex, visited):
             return True
 
     return False
