@@ -2,7 +2,7 @@
 # O(V+E) T | O(V) S
 
 from graph import AdjacencyListGraph
-from detect_cycle_in_directed_graph import detect_cycle_in_directed_graph
+from cycle_in_directed_graph import dfs_with_processing_stack
 
 
 def schedule_course(num_courses: int, prerequisites: list[list[int]]) -> bool:
@@ -12,6 +12,6 @@ def schedule_course(num_courses: int, prerequisites: list[list[int]]) -> bool:
 
     visited = set()
     for start_course in range(num_courses):
-        if detect_cycle_in_directed_graph(graph, start_course, visited, []):
+        if dfs_with_processing_stack(graph, start_course, visited, []):
             return False
     return True
