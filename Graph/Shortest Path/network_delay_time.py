@@ -3,7 +3,7 @@
 from math import inf
 
 from dijkstra_algorithm import dijkstra_algorithm
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 
 
 # O(N*E) TS

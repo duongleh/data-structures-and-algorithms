@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/course-schedule-ii
 # O(V+E) TS
 
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 
 
 def find_order(num_courses: int, prerequisites: list[list[int]]) -> list[int]:

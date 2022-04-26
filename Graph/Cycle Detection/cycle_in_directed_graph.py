@@ -1,7 +1,7 @@
 # https://www.algoexpert.io/questions/Cycle%20In%20Graph
 # O(V+E) T | O(V) S
 
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 
 
 def dfs_with_processing_stack(

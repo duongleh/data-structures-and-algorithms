@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/course-schedule
 # O(V+E) T | O(V) S
 
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 from cycle_in_directed_graph import dfs_with_processing_stack
 
 

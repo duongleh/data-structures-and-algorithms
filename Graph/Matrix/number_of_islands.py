@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/number-of-islands
 
-from disjoint_set import UnionFind
+from Graph.DisjointSet.disjoint_set import UnionFind
 
 
 class DisjointSet(UnionFind):

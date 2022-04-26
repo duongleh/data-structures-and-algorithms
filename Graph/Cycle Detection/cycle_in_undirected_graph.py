@@ -1,6 +1,6 @@
 # O(V+E) T | O(V) S
 
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 
 
 def detect_cycle_in_undirected_graph(

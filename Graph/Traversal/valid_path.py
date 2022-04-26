@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/find-if-path-exists-in-graph
 # O(V+E) TS
 
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 
 
 def valid_path_dfs(edges: list[list[int]], source: int, destination: int) -> bool:

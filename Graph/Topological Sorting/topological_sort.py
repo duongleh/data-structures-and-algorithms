@@ -1,7 +1,8 @@
 # https://www.algoexpert.io/questions/Topological%20Sort
 # O(V+E) TS
 
-from graph import AdjacencyListGraph
+
+from Graph.graph import AdjacencyListGraph
 
 
 def topological_sort(vertices: list[int], edges: list[list[int]]) -> list[int]:

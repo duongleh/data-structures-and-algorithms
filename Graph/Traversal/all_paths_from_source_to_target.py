@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/all-paths-from-source-to-target
 # O(2^V*V) T | O(V+E) S
 
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 
 
 def all_paths_from_source_to_target(graph: AdjacencyListGraph) -> list[list[int]]:

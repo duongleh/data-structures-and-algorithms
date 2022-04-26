@@ -1,7 +1,7 @@
 # https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
 # O(V+E) T | O(V) S
 
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 
 
 def breadth_first_traversal(

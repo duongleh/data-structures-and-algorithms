@@ -2,7 +2,7 @@
 
 import math
 
-from disjoint_set import UnionFind
+from Graph.DisjointSet.disjoint_set import UnionFind
 
 
 # O(Elog(E)) T | O(E) S (E is the number of edges, E = N*(N-1)/2 ≈ N^2)

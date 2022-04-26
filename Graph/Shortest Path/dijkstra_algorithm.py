@@ -4,7 +4,7 @@
 import heapq
 from math import inf
 
-from graph import AdjacencyListGraph
+from Graph.graph import AdjacencyListGraph
 
 
 def dijkstra_algorithm(
