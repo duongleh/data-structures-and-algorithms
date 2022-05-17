@@ -1,6 +1,8 @@
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 # O(N) T | O(1) S
 
+from best_time_to_buy_and_sell_stock_iv import best_time_to_buy_and_sell_stock_iv
+
 
 def best_time_to_buy_and_sell_stock_sliding_window(prices: list[int]) -> int:
     max_profit = 0
@@ -20,3 +22,7 @@ def best_time_to_buy_and_sell_stock_kadane_algorithm(prices: list[int]) -> int:
         current_profit = max(0, current_profit + prices[index] - prices[index - 1])
         max_profit = max(max_profit, current_profit)
     return max_profit
+
+
+def best_time_to_buy_and_sell_stock_bottom_up(prices: list[int]) -> int:
+    return best_time_to_buy_and_sell_stock_iv(prices, 1)
