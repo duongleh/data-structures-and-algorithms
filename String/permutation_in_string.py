@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/permutation-in-string
-# O(len(pattern) + len(string)) T | O(1) S
+# O(N + M) T | O(1) S
 
 
 def permutation_in_string(pattern: str, string: str) -> bool:

@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/find-all-anagrams-in-a-string
-# O(len(string + len(pattern))) T | O(1) S
+# O(N + M) T | O(1) S
 
 
 def find_all_anagrams_in_a_string(string: str, pattern: str) -> list[int]:

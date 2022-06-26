@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/minimum-window-substring
-# O(len(string + len(pattern))) T | O(1) S
+# O(N + M) T | O(1) S
 
 from math import inf
 
