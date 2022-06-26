@@ -1,21 +1,21 @@
 # https://leetcode.com/problems/valid-anagram
-# O(N) TS
+# O(N + M) T | O(1) S
 
 
 def is_anagram(first_string: str, second_string: str) -> bool:
     if len(first_string) != len(second_string):
         return False
 
-    table = {}
+    character_frequency = {}
     for character in first_string:
-        table[character] = table.get(character, 0) + 1
+        character_frequency[character] = character_frequency.get(character, 0) + 1
 
     for character in second_string:
-        if character not in table:
+        if character not in character_frequency:
             return False
 
-        table[character] -= 1
-        if table[character] == 0:
-            table.pop(character)
+        character_frequency[character] -= 1
+        if character_frequency[character] == 0:
+            character_frequency.pop(character)
 
-    return table == {}
+    return not character_frequency
