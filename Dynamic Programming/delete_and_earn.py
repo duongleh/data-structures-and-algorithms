@@ -33,7 +33,7 @@ def delete_and_earn_2(nums: list[int]) -> int:
     last_earning = 0
 
     for index, num in enumerate(sorted_nums):
-        if index and sorted_nums[index - 1] + 1 == num:
+        if index > 0 and sorted_nums[index - 1] + 1 == num:
             current_earning = max(points[num] + second_last_earning, last_earning)
         else:
             current_earning = points[num] + last_earning

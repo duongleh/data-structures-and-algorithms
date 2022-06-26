@@ -11,12 +11,10 @@ def longest_palindromic_subsequence(string: str) -> int:
             return memo[left][right]
 
         if left > right:
-            return 0
-
-        if left == right:
-            return 1
-
-        if string[left] == string[right]:
+            memo[left][right] = 0
+        elif left == right:
+            memo[left][right] = 1
+        elif string[left] == string[right]:
             memo[left][right] = 2 + longest_subsequence(left + 1, right - 1)
         else:
             memo[left][right] = max(
