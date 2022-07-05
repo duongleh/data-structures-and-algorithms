@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/maximum-depth-of-binary-tree
-# O(N) T | O(N) S
+# O(N) TS
 
 from typing import Optional
 

@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/path-sum
-# O(N) T | O(N) S
+# O(N) TS
 
 
 from typing import Optional
@@ -11,9 +11,9 @@ def path_sum(root: Optional[TreeNode], target_sum: int) -> bool:
     if not root:
         return False
 
-    target_sum -= root.val
+    target_sum -= root.value
 
-    if not root.left and not root.right:
+    if not root.left_child and not root.right_child:
         return target_sum == 0
 
-    return path_sum(root.left, target_sum) or path_sum(root.right, target_sum)
+    return path_sum(root.left_child, target_sum) or path_sum(root.right_child, target_sum)

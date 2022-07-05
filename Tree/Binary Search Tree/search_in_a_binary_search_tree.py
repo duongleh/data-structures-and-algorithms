@@ -10,12 +10,12 @@ def search_in_a_binary_search_tree_recursion(root: Optional[TreeNode], target: i
     if root is None:
         return None
 
-    if root.val == target:
+    if root.value == target:
         return root
-    elif target > root.val:
-        return search_in_a_binary_search_tree_recursion(root.right, target)
+    elif target > root.value:
+        return search_in_a_binary_search_tree_recursion(root.right_child, target)
     else:
-        return search_in_a_binary_search_tree_recursion(root.left, target)
+        return search_in_a_binary_search_tree_recursion(root.left_child, target)
 
 
 # O(H) T | O(1) S
@@ -24,11 +24,11 @@ def search_in_a_binary_search_tree_iteration(root: Optional[TreeNode], target: i
         return None
 
     while root:
-        if root.val == target:
+        if root.value == target:
             return root
-        elif target > root.val:
-            root = root.right
+        elif target > root.value:
+            root = root.right_child
         else:
-            root = root.left
+            root = root.left_child
 
     return None

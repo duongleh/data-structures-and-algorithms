@@ -1,5 +1,5 @@
 # https://www.algoexpert.io/questions/Branch%20Sums
-# O(N) T | O(N) S
+# O(N) TS
 
 
 from typing import Optional

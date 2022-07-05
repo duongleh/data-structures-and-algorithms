@@ -10,9 +10,9 @@ def insert_into_a_binary_search_tree(root: Optional[TreeNode], target: int) -> O
     if root is None:
         return TreeNode(target)
 
-    if target > root.val:
-        root.right = insert_into_a_binary_search_tree(root.right, target)
+    if target > root.value:
+        root.right_child = insert_into_a_binary_search_tree(root.right_child, target)
     else:
-        root.left = insert_into_a_binary_search_tree(root.left, target)
+        root.left_child = insert_into_a_binary_search_tree(root.left_child, target)
 
     return root

@@ -9,15 +9,15 @@ def validate_binary_search_tree_inorder_traversal(root: TreeNode) -> bool:
     previous_node = -inf
 
     def traverse_inorder(root: TreeNode):
-        if root.left and traverse_inorder(root.left) is False:
+        if root.left_child and traverse_inorder(root.left_child) is False:
             return False
 
         nonlocal previous_node
-        if root.val <= previous_node:
+        if root.value <= previous_node:
             return False
-        previous_node = root.val
+        previous_node = root.value
 
-        if root.right and traverse_inorder(root.right) is False:
+        if root.right_child and traverse_inorder(root.right_child) is False:
             return False
 
         return True
@@ -33,10 +33,10 @@ def validate_binary_search_tree_valid_range(
     if not root:
         return True
 
-    if root.val <= low or root.val >= high:
+    if root.value <= low or root.value >= high:
         return False
 
     return (
-        validate_binary_search_tree_valid_range(root.left, low, root.val)
-        and validate_binary_search_tree_valid_range(root.right, root.val, high),
+        validate_binary_search_tree_valid_range(root.left_child, low, root.value)
+        and validate_binary_search_tree_valid_range(root.right_child, root.value, high),
     )

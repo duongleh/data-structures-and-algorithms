@@ -15,8 +15,8 @@ def inorder_successor_in_bst(root: Optional[TreeNode], target: TreeNode) -> Opti
     while root is not None:
         if root.value > target.value:
             successor = root
-            root = root.left
+            root = root.left_child
         else:
-            root = root.right
+            root = root.right_child
 
     return successor

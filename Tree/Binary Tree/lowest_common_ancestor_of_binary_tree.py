@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree
-# O(N) T | O(N) S
+# O(N) TS
 
 from binary_tree import TreeNode
 

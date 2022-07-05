@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/subtree-of-another-tree
-# O(N) T | O(N) S
+# O(N) TS
 
 
 from typing import Optional

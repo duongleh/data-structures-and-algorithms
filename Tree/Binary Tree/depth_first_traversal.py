@@ -4,7 +4,7 @@ from binary_tree import TreeNode
 
 
 # https://leetcode.com/problems/binary-tree-preorder-traversal
-# O(N) T | O(N) S
+# O(N) TS
 class PreorderTraversal:
     def recursive_traverse(
         self,
@@ -38,7 +38,7 @@ class PreorderTraversal:
 
 
 # https://leetcode.com/problems/binary-tree-inorder-traversal
-# O(N) T | O(N) S
+# O(N) TS
 class InorderTraversal:
     def recursive_traverse(
         self,
@@ -74,7 +74,7 @@ class InorderTraversal:
 
 
 # https://leetcode.com/problems/binary-tree-postorder-traversal
-# O(N) T | O(N) S
+# O(N) TS
 class PostorderTraversal:
     def recursive_traverse(
         self,
