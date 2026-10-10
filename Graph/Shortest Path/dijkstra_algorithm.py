@@ -1,4 +1,4 @@
-# https://www.algoexpert.io/questions/Dijkstra%27s%20Algorithm
+# https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
 # O((V + E) * log(V)) T | O(V) S
 
 import heapq
