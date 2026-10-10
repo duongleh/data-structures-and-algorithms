@@ -62,49 +62,18 @@ def get_vertex_name(row: int, column: int, column_count: int) -> int:
 
 # O(W*H) T | O(1) S
 def number_of_islands_dfs(grid: list[list[str]]) -> int:
-    if not grid:
+    count = 0
+        for i in range(len(grid)):
+            for j in range(len(grid[i])):
+                area = dfs(grid, i, j)
+                if area > 0:
+                    count += 1
+        return count
+
+def dfs(grid, i, j):
+    if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[i]) or grid[i][j] == "0":
         return 0
 
-    height = len(grid)
-    width = len(grid[0])
-    islands_count = 0
+    grid[i][j] = "0"
 
-    for row in range(height):
-        for col in range(width):
-            if grid[row][col] != "1":
-                continue
-
-            dfs(grid, row, col, height, width)
-            islands_count += 1
-
-    return islands_count
-
-
-def dfs(grid, row, col, height, width):
-    if grid[row][col] != "1":
-        return
-
-    grid[row][col] = "-1"
-
-    for adjacent_row, adjacent_col in get_adjacent_vertices(row, col, height, width):
-        dfs(grid, adjacent_row, adjacent_col, height, width)
-
-
-def get_adjacent_vertices(row, col, height, width) -> list[tuple[int, int]]:
-    adjacent_vertices = []
-    directions = [
-        (-1, 0),
-        (0, 1),
-        (1, 0),
-        (0, -1),
-    ]
-
-    for row_direction, col_direction in directions:
-        adjacent_row = row + row_direction
-        adjacent_col = col + col_direction
-
-        if adjacent_row < 0 or adjacent_row >= height or adjacent_col < 0 or adjacent_col >= width:
-            continue
-
-        adjacent_vertices.append((adjacent_row, adjacent_col))
-    return adjacent_vertices
+    return 1 + dfs(grid, i+1, j) + dfs(grid, i-1, j) + dfs(grid, i, j+1) + dfs(grid, i, j-1)
