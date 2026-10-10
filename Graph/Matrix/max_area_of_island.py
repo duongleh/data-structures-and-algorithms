@@ -3,59 +3,17 @@
 
 
 def max_area_of_island(grid: list[list[int]]) -> int:
-    if not grid:
-        return 0
-
-    height = len(grid)
-    width = len(grid[0])
     max_area = 0
-    for row in range(height):
-        for col in range(width):
-            area = dfs(grid, row, col, height, width)
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            area = dfs(grid, i, j)
             max_area = max(max_area, area)
     return max_area
 
+def dfs(grid, i, j):
+    if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[i]) or grid[i][j] == 0:
+        return 0
 
-def dfs(
-    grid: list[list[int]],
-    row: int,
-    col: int,
-    height: int,
-    width: int,
-    area: int = 0,
-):
-    if grid[row][col] == 0:
-        return area
-    area += 1
-    grid[row][col] = 0
-    for adjacent_row, adjacent_col in get_adjacent_lands(grid, row, col, height, width):
-        area += dfs(grid, adjacent_row, adjacent_col, height, width)
-    return area
+    grid[i][j] = 0
 
-
-def get_adjacent_lands(
-    grid: list[list[int]],
-    row: int,
-    col: int,
-    height: int,
-    width: int,
-) -> list[tuple[int, int]]:
-    directions = [
-        (0, 1),
-        (0, -1),
-        (-1, 0),
-        (1, 0),
-    ]
-    adjacent_lands = []
-    for row_direction, col_direction in directions:
-        adjacent_row = row + row_direction
-        adjacent_col = col + col_direction
-        if adjacent_row < 0 or adjacent_row >= height or adjacent_col < 0 or adjacent_col >= width:
-            continue
-
-        if grid[adjacent_row][adjacent_col] == 0:
-            continue
-
-        adjacent_lands.append((adjacent_row, adjacent_col))
-
-    return adjacent_lands
+    return 1 + dfs(grid, i+1, j) + dfs(grid, i-1, j) + dfs(grid, i, j+1) + dfs(grid, i, j-1)
